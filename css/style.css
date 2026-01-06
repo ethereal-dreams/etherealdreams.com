@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+}
+
+header {
+    background: #fff;
+    color: #000;
+    padding: 0 0 40px 0;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 0;
+    /* text-transform: uppercase; */
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #666;
+    font-weight: normal;
+}
+
+main {
+    padding: 0;
+}
+
+.blog-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.posts-list {
+    list-style: none;
+}
+
+.posts-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.posts-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.posts-list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    display: block;
+    padding: 5px 0;
+}
+
+.posts-list a:hover {
+    text-decoration: underline;
+}
+
+.posts-list .post-date {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+footer {
+    background: #fff;
+    padding: 40px 0 0 0;
+    text-align: left;
+    color: #666;
+    border-top: 2px solid #000;
+    margin-top: 60px;
+}
+
+/* Blog post page styles */
+.post-content {
+    padding: 0;
+}
+
+.post-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: normal;
+    /* text-transform: uppercase; */
+}
+
+.post-content .post-meta {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+}
+
+.post-content .post-body {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #000;
+}
+
+.post-content .post-body p {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-link::before {
+    content: "< ";
+    margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .post-content h1 {
+        font-size: 1.5em;
+    }
+}
